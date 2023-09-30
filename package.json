@@ -1,0 +1,29 @@
+{
+  "name": "buns-website",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "scripts": {
+    "dev":"bun run build && bun ./src/index.ts",
+    "build": "bun build ./src/App.tsx --outfile=./dist/bundle.js",
+    "work": "bun build ./src/App.tsx --outfile=./dist/bundle.js --watch"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@material-ui/icons": "^4.11.3",
+    "@mui/icons-material": "^5.14.11",
+    "@mui/material": "^5.14.11",
+    "@types/react": "^18.2.23",
+    "express": "^4.18.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1"
+  }
+}
