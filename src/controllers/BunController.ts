@@ -36,9 +36,9 @@ const deleteOne = (req : typeof Req ,res : typeof Res) => {
 
 const updateOne = (req : typeof Req ,res : typeof Res) => {
     const data = {
-        $name: req.body.name,
-        $rate: req.body.rate,
-        $description: req.body.description
+        name: req.body.name,
+        rate: req.body.rate,
+        description: req.body.description
     }
     
     repo.updateOne(req.params.id,data)
